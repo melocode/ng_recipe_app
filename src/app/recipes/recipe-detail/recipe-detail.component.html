@@ -13,18 +13,18 @@
 </div>
 <div class="row">
   <div class="col-sm-12">
-    <div class="btn-group">
-      <button
-        type="button"
-        class="btn btn-primary dropdown-toggle">
+    <div class="dropdown" appDropdown>
+      <button class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         Manage Recipe <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu">
-        <li>
-          <a href="#">Shopping List</a>
-          <a href="#">Edit Recipe</a>
-          <a href="#">Delete Recipe</a>
-        </li>
+
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li class="dropdown-item"><a href="#">Shopping List</a></li>
+        <li class="dropdown-item"><a href="#">Edit Recipe</a></li>
+        <li class="dropdown-item"><a href="#">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
