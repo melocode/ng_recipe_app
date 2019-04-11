@@ -23,4 +23,13 @@ export class ShoppingListService {
     this.ingredients.push(ing);
     this.ingredientsChanged.emit(this.ingredients.slice()); //emit the updated copy each time.
   }
+
+  public addIngredients(ingredients: Ingredient[]):void {
+    // for(let ingredient of ingredients) {
+    //   this.ingredients.push(ingredient);
+    // }
+    //the ... spreads the array into individual elements from the array.
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
+  }
 }
